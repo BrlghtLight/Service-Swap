@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serviceswap.FXMLDocumentController">
+  <children>
+     <Pane accessibleHelp="test2" accessibleText="test" prefHeight="767.0" prefWidth="518.0">
+        <children>
+           <Button fx:id="leftButton" layoutX="14.0" layoutY="659.0" mnemonicParsing="false" onMouseClicked="#leftClicked" prefHeight="94.0" prefWidth="134.0" text="&lt;-">
+              <font>
+                 <Font size="43.0" />
+              </font>
+              <effect>
+                 <InnerShadow color="#007bff" />
+              </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+           </Button>
+           <Button fx:id="requestButton" layoutX="192.0" layoutY="659.0" mnemonicParsing="false" onMouseClicked="#requestClicked" prefHeight="94.0" prefWidth="134.0" text="Request">
+              <font>
+                 <Font size="18.0" />
+              </font>
+              <effect>
+                 <InnerShadow color="#008bf5" />
+              </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+           </Button>
+           <Button fx:id="rightButton" layoutX="363.0" layoutY="661.0" mnemonicParsing="false" onMouseClicked="#rightClicked" prefHeight="92.0" prefWidth="134.0" text="-&gt;">
+              <font>
+                 <Font size="43.0" />
+              </font>
+              <effect>
+                 <InnerShadow color="#00b7ff" />
+              </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+           </Button>
+           <ImageView fx:id="profilePic" fitHeight="255.0" fitWidth="293.0" layoutX="14.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="badgeOne" fitHeight="71.0" fitWidth="72.0" layoutX="404.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="badgeTwo" fitHeight="71.0" fitWidth="72.0" layoutX="404.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+           <ImageView fx:id="badgeThree" fitHeight="71.0" fitWidth="72.0" layoutX="404.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="profileName" alignment="CENTER" prefHeight="147.0" prefWidth="518.0" text="Name" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="nearMe" fitHeight="71.0" fitWidth="72.0" layoutX="320.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="256.0" layoutY="523.0" orientation="VERTICAL" prefHeight="116.0" prefWidth="4.0" />
+            <Label fx:id="talentTextArea" alignment="TOP_LEFT" focusTraversable="false" layoutX="28.0" layoutY="576.0" prefHeight="71.0" prefWidth="200.0" textOverrun="CLIP" />
+            <Label alignment="CENTER" layoutX="8.0" layoutY="522.0" prefHeight="54.0" prefWidth="236.0" text="Skills:" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="needsTextArea" alignment="TOP_LEFT" focusTraversable="false" layoutX="294.0" layoutY="576.0" prefHeight="71.0" prefWidth="200.0" textOverrun="CLIP" />
+            <Label alignment="CENTER" layoutX="274.0" layoutY="522.0" prefHeight="54.0" prefWidth="236.0" text="Needs:" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="bioField" alignment="TOP_LEFT" layoutX="9.0" layoutY="405.0" prefHeight="104.0" prefWidth="499.0" text="Allan please add bio" wrapText="true" />
+        </children>
+        <effect>
+           <ColorAdjust brightness="0.12" />
+        </effect>
+     </Pane>
+  </children>
+</AnchorPane>
